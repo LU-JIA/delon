@@ -1,0 +1,20 @@
+{
+  "schematics": {
+    "ng-add": {
+      "factory": "./ng-add",
+      "description": "Create an Alain workspace.",
+      "schema": "./ng-add/schema.json",
+      "aliases": ["alain-shell"]
+    },
+    "application": {
+      "factory": "./application",
+      "schema": "./application/schema.json",
+      "description": "Create an Alain application."
+    },
+    "form": {
+      "factory": "./form",
+      "schema": "./form/schema.json",
+      "description": "Generates @delon/form."
+    }
+  }
+}

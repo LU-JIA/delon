@@ -30,6 +30,7 @@
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "lint-staged": "lint-staged",
     "test": "ng test --code-coverage --watch=false",
+    "test:schematics": "bash build-schematics.sh -b -t",
     "site:gen": "node scripts/site/main",
     "site:release": "bash ./site.sh -b",
     "site:gh": "bash ./site.sh -b -d",

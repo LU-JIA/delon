@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsWeUIShell",
+  "title": "WeUI Shell Options Schema",
+  "type": "object",
+  "properties": {
+    "skipPackageJson": {
+      "type": "boolean",
+      "default": false,
+      "description": "Do not add @delon/* dependencies to package.json (e.g., --skipPackageJson)"
+    },
+    "codeStyle": {
+      "type": "boolean",
+      "default": true,
+      "description": "Do not add code styles (e.g., --codeStyle)"
+    }
+  },
+  "required": []
+}
