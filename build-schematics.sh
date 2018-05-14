@@ -52,6 +52,8 @@ copyFiles() {
     # 确保路径有效性
     "|${2}application/files/"
     "|${2}application/files/src"
+    "|${2}application/files/src/assets"
+    "|${2}application/files/src/assets/_"
     "|${2}application/_files/"
     "|${2}application/_files/src/"
     # code styles
@@ -77,6 +79,8 @@ copyFiles() {
     "${1}src/main.ts|${2}application/_files/src/"
     "${1}src/styles.less|${2}application/_files/src/"
     "${1}src/typings.d.ts|${2}application/files/src/"
+    # assets
+    "${1}src/assets/_/img/*|${2}application/files/src/assets/_/img/"
   )
   local from to
   for fields in ${paths[@]}
